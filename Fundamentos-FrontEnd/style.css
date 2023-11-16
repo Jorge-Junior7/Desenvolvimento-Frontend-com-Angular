@@ -1,19 +1,43 @@
 body {
-    background: #ccc;
+    background: #f7f7f7;
 }
 
-#title, .subtitle, .post_title{
-    color: blue
+.travisScoot{
+    border-radius: 50px;
+    border: 3px solid #505050;
+}
+
+#title,
+.subtitle,
+.post_title {
+    color: #505050;
 }
 
 .post_title {
     font-size: 16px;
     font-style: italic;
+    margin: 0;
+    /*Zerando a margen do post title*/
+    margin-bottom: 15px;
+    /*E deixando a margen apenas na parte inferior*/
 }
 
 .post {
     background: #ffffff;
-    padding: 10px;
-    border: 3px solid #000;
-    margin: 10px;
+    padding: 15px;
+    border: 3px solid #505050;
+    margin-bottom: 15px;
+    border-radius: 10px 5px 10px 10px ;
+}
+
+.post_content {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.post_image {
+    margin-bottom: 15px;
+     border-radius: 50px;
+    border: 3px solid #505050;
+
 }
