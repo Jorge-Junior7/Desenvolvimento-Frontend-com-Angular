@@ -1,6 +1,8 @@
 body {
     background: #f7f7f7;
     font-family: Verdana;
+    max-width: 900px;
+    margin: auto; /*serve para ajustar ao centro automaticamente*/
 }
 
 .travisScoot{
@@ -45,12 +47,14 @@ a {
     margin: 0;
     margin-bottom: 15px;
     text-transform: capitalize;
+    text-align: justify;
 }
 
 .post_image {
     margin-bottom: 15px;
      border-radius: 50px;
     border: 3px solid #505050;
+    width: 100%;  /*ELE SEMRPE IRÁ RESPEITAR O ELEMENTO DE FORA*/
 
 }
 
