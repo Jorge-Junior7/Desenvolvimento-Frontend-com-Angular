@@ -7,6 +7,14 @@ variavel = 20; //aqui eu posso alterar o valor que tinha antes
 
 const pi = 3.14;  // conts é como se fosse o Final em java, uma vez declarada não pode substituir o valor.
 
-console.log(variavel)
+console.log('Hello World')
 
 //Dessa forma é para imprimir
+
+/*ADIÇÃO = 
+
+SUBTRAÇÃO = -
+
+MULTIPLICAÇÃO  = *
+
+DIVISÃO = */
