@@ -14,9 +14,10 @@ const distanciaKmViagem = 18342;
 
 const calculo = preçoCombustivel * distanciaKmViagem / KmPorLitros;
 
-console.log( '(sem o TOFIXED)' + 'O total de gasto que vou gastar nessa viagem e:' + preçoCombustivel * distanciaKmViagem / KmPorLitros);
+console.log('(sem o TOFIXED)' + 'O total de gasto que vou gastar nessa viagem e:' + preçoCombustivel * distanciaKmViagem / KmPorLitros);
 
 console.log(' '); //quebrar linha
 
-console.log( '(com o TOFIXED).O total de gasto que vou gastar nessa viagem e:' + calculo.toFixed(2));  //Esse .toFixed(2) é para aparecer apenas 2 centavos no após o ponto
+console.log('(com o TOFIXED).O total de gasto que vou gastar nessa viagem e:' + calculo.toFixed(2));  
+//Esse .toFixed(2) é para aparecer apenas 2 centavos no após o ponto
 
