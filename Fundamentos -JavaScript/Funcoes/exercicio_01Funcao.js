@@ -18,12 +18,13 @@ function classificarImc(imc) {
     //O return serve para esse valor poder sair da chaves e poder ser usual
 } 
 
-function main(){ 
+//Função invocada imediatamente
+
+//Main
+(function (){ 
 const peso = 77;
 const altura = 1.75;
 
 const imc = calcularImc(peso, altura);
 console.log(classificarImc(imc));
-}
-
-main();
+}) ();
