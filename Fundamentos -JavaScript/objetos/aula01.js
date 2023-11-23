@@ -1,10 +1,15 @@
 
 const junior = {
     nome: 'Jorge W M Junior',
-    idade: 25
+    idade: 40
 };
 
-//Há 3 formas de imprimir esse objeto;
+junior.altura = 1.70; 
+//observe chamei o objeto adicionei mais um parâmetro
+
+delete junior.nome; 
+//Observe que aqui eu removi esse parâmetro
+
 console.log(junior);
-console.log(junior.nome);
-console.log(junior.idade);
+
+
