@@ -1,22 +1,19 @@
+// Criação do objeto pessoa com propriedades nome e idade
 const pessoa = {
     nome: 'Jorge W M Junior',
     idade: 40,
 
+    // Método descrever para exibir nome e idade da pessoa
     descrever: function () {
         console.log('Meu nome é ', this.nome, 'e minha idade é ', this.idade);
     }
 };
 
-// Redefine a função descrever para exibir APENAS o nome
-pessoa.descrever = function () {
-    console.log('Nome é', this.nome);
-}
+// Acessar esses valores de forma mais dinâmica:
 
-// Altera o nome, idade, adiciona altura e deleta a propriedade altura da pessoa
-pessoa.nome = 'Juliana'; // Altera o nome para 'Juliana'
-pessoa.idade = 10; // Altera a idade para 10
-pessoa.altura = 1.70; // Adiciona a altura
-delete pessoa.altura; // Deleta a propriedade altura do objeto pessoa
+// Forma não muito prática: utilizando uma variável 'atributo' para armazenar o nome da propriedade e acessá-la através de colchetes []
+const atributo = 'idade'; // Define o nome do atributo desejado como 'idade'
+console.log(pessoa[atributo]); // Acessa o valor da propriedade 'idade' do objeto pessoa dinamicamente através da variável 'atributo'
 
-pessoa.descrever(); 
-// Chama a função descrever para exibir somente o nome
+// Forma mais prática: acessar diretamente a propriedade desejada usando colchetes []
+console.log(pessoa['nome']); // Acessa diretamente o valor da propriedade 'nome' do objeto pessoa de forma estática
