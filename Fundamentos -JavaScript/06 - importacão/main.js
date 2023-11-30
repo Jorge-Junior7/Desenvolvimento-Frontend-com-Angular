@@ -1,5 +1,6 @@
-// Importa o módulo 'funcoes-auxiliares' para a variável 'funcoes'
-const funcoes = require('./funcoes-auxiliares'); // Essa linha é onde importa o módulo
+// Utilizando o Objetct Destructuring
 
-// Chama a função 'gets()' do módulo 'funcoes-auxiliares' e imprime seu resultado no console
-console.log(funcoes.gets());
+const { gets, print } = require('./funcoes-auxiliares'); // Utilizando o Object Destructuring para atribuir as funções a variáveis
+
+print(gets());
+// Aqui, a função print() é como o console.log(), e dentro dela estamos chamando a função gets() importada
