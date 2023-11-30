@@ -1,13 +1,16 @@
-// Definição de uma função chamada gets que retorna o valor 10
+const entradas = [5, 50, 10, 98, 23];
+let i = 0;
+
+
 function gets(){
-    return 10;
+    const valor = entradas[i]; // Obtém o valor da posição 'i' 
+    i++; // Incrementa o 'i' para acessar o próximo valor do array na proxima vez
+    return valor; // Retorna 'undefined'
 }
 
-// Definição de uma função chamada print que imprime o texto recebido no console
 function print(texto){
     console.log(texto);
 }
 
-// O objeto 'module.exports' é usado para tornar as funções gets e print disponíveis para outros módulos.
-// Aqui, exportando as funções gets e print como um objeto, para que possam ser utilizadas em outros arquivos
-module.exports = { gets, print }; // Aqui estão as funções gets e print exportadas
+
+module.exports = { gets, print}; 
