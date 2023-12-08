@@ -18,7 +18,7 @@
 .water   {
     background-color: #678fee; 
 }
-.eletric {
+.electric {
     background-color:#f7cf2e;
 }
 .ice     {
@@ -131,20 +131,23 @@
 }
 
 /*TELA RESPONSIVA*/
+/* Media query para telas de 380px ou mais, exibindo 2 Pokémon por linha */
 @media screen and (min-width: 380px) {
     .pokemons {
-        grid-template-columns: lfr lfr;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
+/* Media query para telas de 576x ou mais, exibindo 3 Pokémon por linha */
 @media screen and (min-width: 576px) {
     .pokemons {
-        grid-template-columns: lfr lfr lfr;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
+/* Media query para telas de 992px ou mais, exibindo 4 Pokémon por linha */
 @media screen and (min-width: 992px) {
     .pokemons {
-        grid-template-columns: lfr lfr lfr lfr;
+        grid-template-columns: repeat(4, 1fr);
     }
 }
