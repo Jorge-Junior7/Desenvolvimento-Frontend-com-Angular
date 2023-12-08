@@ -1,18 +1,17 @@
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
-    color: #fff;
 }
 
 body {
-    background-color: #000;
+    background-color: #696969;
 }
 
 .content {
     width: 100vw;
     padding: 1rem;
     margin: 0%;
-    background-color: #000;
+    background-color: #dfdddd;
     height: 100vh;
 }
 
