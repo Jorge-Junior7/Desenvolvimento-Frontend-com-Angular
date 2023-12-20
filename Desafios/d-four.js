@@ -43,9 +43,11 @@ dois
 // Saiba mais sobre isNaN(): 
 // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/isNaN
 
+//Recebe os valores
 const capitalInicial = parseFloat(gets());
-const taxaJuros = parseFloat(gets());
+const taxaJuros = parseFloat(ges());
 const tempoMeses = parseInt(gets());
+
 
 //!isNaN é uma função embutida em JavaScript que verifica se o valor passado como argumento não é um número.
 if (!isNaN(capitalInicial) && !isNaN(taxaJuros) && !isNaN(tempoMeses) && tempoMeses > 0) {
