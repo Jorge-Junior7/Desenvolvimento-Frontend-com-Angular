@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Details</title>
+  <meta charset="UTF-8">
+  <title>Pokemon Details</title>
 </head>
 <body>
-    
+  <section class="content">
+    <div class="top-section">
+      <h1 id="pokemonName"></h1>
+      <p><span id="pokemonNumber"></span></p>
+      <img id="photo" src="" alt="Pokemon">
+      <p><strong>Type:</strong> <span id="types"></span></p>
+    </div>
+    <div id="about" class="pokemon-section">
+      <h2>About</h2>
+      <ul>
+        <li><strong>Species:</strong> <span id="species"></span></li>
+        <li><strong>Height:</strong> <span id="height"></span></li>
+        <li><strong>Weight:</strong> <span id="weight"></span></li>
+        <li><strong>Abilities:</strong> <span id="abilities"></span></li>
+      </ul>
+    </div>
+    <div id="breeding" class="pokemon-section">
+      <h2>Breeding</h2>
+      <ul>
+        <li><strong>Gender:</strong> <span id="gender"></span></li>
+        <li><strong>Egg Groups:</strong> <span id="eggGroups"></span></li>
+        <li><strong>Egg Cycle:</strong> <span id="eggCycle"></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <script src="assets/js/details.js"></script>
 </body>
 </html>
