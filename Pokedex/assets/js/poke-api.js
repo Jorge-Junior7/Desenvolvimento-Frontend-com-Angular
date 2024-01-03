@@ -1,5 +1,5 @@
 const pokeApi = {}
-
+ /*Basicamente chamou um array destribui para função */
 function convertPokeApiDetailToPokemon(pokeDetail) {
     const pokemon = new Pokemon()
     pokemon.number = pokeDetail.id
