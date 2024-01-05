@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('photo').src = data.sprites.other.dream_world.front_default;
 
         const types = data.types.map(type => type.type.name);
-        document.getElementById('types').innerText = types.join(', ');
+        document.getElementById('types').innerText = types.join(' ');
 
         const topSection = document.querySelector('.top-section');
         topSection.classList.add(types[0]); // Adiciona a classe do primeiro tipo
@@ -33,7 +33,7 @@ function showAbout(data) {
       <li><strong>Species:</strong> ${data.species.name}</li>
       <li><strong>Height:</strong> ${data.height}</li>
       <li><strong>Weight:</strong> ${data.weight}</li>
-      <li><strong>Types:</strong> <span id="types"></span></li>
+      
     </ul>`;
 }
 
