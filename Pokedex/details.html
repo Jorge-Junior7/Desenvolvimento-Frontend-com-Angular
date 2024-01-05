@@ -16,18 +16,19 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- CSS -->
-  <link rel="stylesheet" href="assets/css/global.css">
   <link rel="stylesheet" href="assets/css/details.css">
 </head>
 
 <body>
   <section class="content">
     <div class="top-section">
-      <h1 id="pokemonName"></h1>
-      <p><span id="pokemonNumber"></span></p>
-      <p><span id="types"></span></p>
-      <img id="photo" src="" alt="Pokemon">
-    </div>
+      <h1 id="pokemonName" class="name"></h1>
+      <div class="info-wrapper">
+          <p><span id="types" class="types"></span></p>
+          <p><span id="pokemonNumber" class="number"></span></p>
+      </div>
+      <img id="photo" src="" alt="Pokemon" class="image">
+  </div>
     <div class="tabs">
       <button onclick="showTab('about')">About</button>
       <button onclick="showTab('baseStats')">Base Stats</button>
