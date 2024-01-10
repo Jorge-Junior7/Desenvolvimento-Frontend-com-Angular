@@ -45,7 +45,49 @@ class Cardnews extends HTMLElement {
     }
 
     styles() {
+        const style = document.createElement("style");
+        style.textContent = 
+        `
+        /* Estiliza o cartão de notícia */
+        .card {
+            width: 80%; /* Define a largura do cartão como 80% da largura disponível */
+            box-shadow: 8px 8px 28px 0px rgba(0, 0, 0, 0.75); /* Adiciona sombra ao cartão */
+            -webkit-box-shadow: 8px 8px 28px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 8px 8px 28px 0px rgba(0, 0, 0, 0.75);
+            display: flex; /* Usa um modelo de layout flexível */
+            flex-direction: row; /* Alinha os elementos internos horizontalmente */
+            justify-content: space-between; /* Distribui o espaço entre os elementos filhos */
+        }
 
+        /* Estiliza a parte esquerda do cartão de notícia */
+        .card__left {
+            display: flex; /* Usa um modelo de layout flexível */
+            flex-direction: column; /* Alinha os elementos internos verticalmente */
+            justify-content: center; /* Centraliza os elementos verticalmente */
+            padding-left: 10px; /* Adiciona um preenchimento à esquerda */
+        }
+
+        /* Estiliza o texto do cabeçalho */
+        .card__left > span {
+            font-weight: 400; /* Define a espessura da fonte */
+        }
+
+        /* Estiliza o link do título */
+        .card__left > a {
+            margin-top: 15px; /* Adiciona um espaçamento superior */
+            font-size: 25px; /* Define o tamanho da fonte */
+            color: black; /* Define a cor do texto como preto */
+            text-decoration: none; /* Remove a sublinhado padrão do link */
+            font-weight: bold; /* Define o peso da fonte como negrito */
+        }
+
+        /* Estiliza o parágrafo de descrição */
+        .card__left > p {
+            color: rgb(70, 70, 70); /* Define a cor do texto */
+        }
+
+        `
+        return style;
     }
 }
 
