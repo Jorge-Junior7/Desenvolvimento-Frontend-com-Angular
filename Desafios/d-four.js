@@ -45,7 +45,7 @@ dois
 
 //Recebe os valores
 const capitalInicial = parseFloat(gets());
-const taxaJuros = parseFloat(ges());
+const taxaJuros = parseFloat(gets());
 const tempoMeses = parseInt(gets());
 
 
