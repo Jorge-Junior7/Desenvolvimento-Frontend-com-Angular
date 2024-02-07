@@ -39,46 +39,46 @@ const contaBancaria = {
     saldo: 1000.0,
   };
   
-  // Define-se uma função chamada realizarOperacao:
-  function realizarOperacao() {
-    // Obtém uma opção do usuário e converte para um número inteiro.
-    const opcao = parseInt(gets());
+
+  function realizarOperacao() { 
+
+    const opcao = parseInt(gets()); // Obtém uma opção do usuário e converte para um número inteiro.
   
-    // Criamos uma estrutura condicional switch para lidar com as diferentes operações com base na opção selecionada:
     switch (opcao) {
-      // Caso a opção seja 1 (Depósito).
-      case 1:
-        // Obtém o valor do depósito do usuário.
-        const valorDeposito = parseFloat(gets());
-        // Adiciona o valor do depósito ao saldo da conta.
-        contaBancaria.saldo += valorDeposito;
-        // Imprime a confirmação do depósito e o saldo atual formatado.
-        print("Operação de depósito concluída.");
+  
+      case 1:  // (Depósito).
+        const valorDeposito = parseFloat(gets());    // Obtém o valor do depósito do usuário.
+    
+        contaBancaria.saldo += valorDeposito;  // Adiciona o valor do depósito ao saldo da conta.
+    
+        print("Operação de depósito concluída.");   // Imprime a confirmação do depósito e o saldo atual formatado.
         print(`Saldo atual: R$ ${contaBancaria.saldo.toFixed(2)}`);
         break;
   
-      // Caso a opção seja 2 (Saque).
-      case 2:
-        // Obtém o valor do saque do usuário.
-        const valorSaque = parseFloat(gets());
-        // TODO: Verifique se o saldo é suficiente para o saque:
-        if (  ) {
+    
+      case 2: // (Saque)
+   
+        const valorSaque = parseFloat(gets());    // Obtém o valor do saque do usuário.
+
+        // TODO: Verificar se o saldo é suficiente para o saque:
+        if (contaBancaria.saldo >= valorSaque) {
           // TODO: Subtraia o valor do saque do saldo da conta:
-          
+          const saque = (contaBancaria.saldo - valorSaque);
+
           print("Operação de saque concluída.");
          // TODO: Imprima a confirmação do saque e o saldo atual formatado:
-          print(` `);
+          print(`Saldo atual: R$ ${(saque).toFixed(2)}`);
         } else {
           print("Saldo insuficiente. Operação de saque cancelada.");
         // TODO: Se o saldo for insuficiente, imprima uma mensagem de erro e o saldo atual:
-          print(` `);
+          print(`Erro, saldo atual: ${contaBancaria.saldotoFixed(2)}`);
         }
         break;
   
       // Caso a opção seja 3 (Verificar Saldo).
       case 3:
         // TODO: Imprima o saldo atual formatado:
-        print(` `);
+        print(`Saldo atual: R$ ${contaBancaria.saldo.toFixed(2)}`);
         break;
   
       // Caso a opção seja 4 (Encerrar o programa).
