@@ -41,10 +41,13 @@ Saldo: R$ 3050.99 */
 
 
 
-const jsonContaBancaria = {
-    string: cliente,
-    string: numeroConta,
-    string: saldoInicial,
-    saldo
+// Objeto JSON vazio para armazenar os dados da conta bancária
+const contaBancaria = {};
 
-};
+// Recebendo os valores de entrada e atribuindo ao objeto contaBancaria
+contaBancaria.cliente = gets(); // Recebe o nome do cliente
+contaBancaria.numeroConta = gets(); // Recebe o número da conta
+contaBancaria.saldo = parseFloat(gets()); // Recebe o saldo inicial
+
+// Imprimindo todas as informações da conta bancária em uma única instrução console.log()
+console.log(`Nome do cliente: ${contaBancaria.cliente}\nNúmero da conta: ${contaBancaria.numeroConta}\nSaldo: R$ ${contaBancaria.saldo.toFixed(2)}`);
