@@ -41,19 +41,26 @@ saque
 
 Nome do cliente: Ana
 Saldo final: R$ 1000.00
+
+
 Caio
 400
 1
 saque
-300	Nome do cliente: Caio
+300	
+
+Nome do cliente: Caio
 Saldo final: R$ 100.00
+
 Pedro
 30
 2
 depósito
 250
 depósito
-465	Nome do cliente: Pedro
+465	
+
+Nome do cliente: Pedro
 Saldo final: R$ 745.00 */
 
 //Desafios JavaScript na DIO têm funções "gets" e "print" acessíveis globalmente:
@@ -62,17 +69,17 @@ Saldo final: R$ 745.00 */
 
 // Log to console
 const contaBancaria = {
-    nomeCliente: "",
+    string: nomeCliente = "",
     saldo: 0,
   };
   
   contaBancaria.nomeCliente = gets();
   contaBancaria.saldo = parseFloat(gets());
-  
+
   const numOperacoes = parseInt(gets());
   
   // TODO: Crie um loop for para iterar sobre o número de operações especificado:
-  for (  ) {
+  for (let i = 0; i <= numOperacoes; i++) {
     const tipoOperacao = gets();
     const valorOperacao = parseFloat(gets())
   
@@ -80,7 +87,8 @@ const contaBancaria = {
     if (tipoOperacao.toLowerCase() === "depósito") {
       // Se for um depósito, adiciona o valor ao saldo.
       contaBancaria.saldo += valorOperacao;
-    } else if (  ) {
+      
+    } else if (tipoOperacao.toLowerCase() === "saque") {
       // Se for um saque, subtrai o valor do saldo.
       contaBancaria.saldo -= valorOperacao;
     }
@@ -90,3 +98,5 @@ const contaBancaria = {
   print(`Nome do cliente: ${contaBancaria.nomeCliente}`);
   // Imprime o saldo final da conta bancária formatado como moeda brasileira (R$) com duas casas decimais.
   print(`Saldo final: R$ ${contaBancaria.saldo.toFixed(2)}`);
+
+  
