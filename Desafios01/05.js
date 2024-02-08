@@ -52,9 +52,10 @@ const contaBancaria = {
   };
   
   // TODO: Calcule a taxa de juros mensal em formato decimal (0 a 1) a partir da taxa percentual fornecida:
-  
+  const calcTaxaJuros  = contaBancaria.taxaJurosMensal / 100;
+
   // TODO: Calcule o montante (valor total após o investimento) usando a fórmula de juros compostos.
-  
+  const montante  = contaBancaria.investimentoInicial * Math.pow((1 + calcTaxaJuros), contaBancaria.periodoMeses);
   
   // É impresso informações sobre o investimento:
   print("Investimento: " + contaBancaria.investimentoInicial.toFixed(2));
