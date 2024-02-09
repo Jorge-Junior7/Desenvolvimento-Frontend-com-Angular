@@ -1,0 +1,13 @@
+# Requisitos
+
+- Node & NPM (Nodejs.org)
+
+- Visual Studio code
+- Angular Language Service
+- Auto Close Tag
+- Tema (opcional)
+- Icones (opcional)
+- EditorConfig, Prettier, eslint
+
+- Angular
+  - npm intall -g @angular/cli@14.1.2
