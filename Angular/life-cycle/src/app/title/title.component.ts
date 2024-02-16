@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TitleComponent implements OnInit {
 
+  nome: string = 'Junin'
   constructor() { }
 
   ngOnInit(): void {
+
+    this.nome= `ola ${this.nome}`
+
   }
+
 
 }
