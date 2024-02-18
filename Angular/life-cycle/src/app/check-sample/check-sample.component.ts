@@ -6,6 +6,7 @@ import {
 	AfterContentInit,
 	AfterViewChecked,
 	AfterViewInit,
+	OnDestroy
 } from '@angular/core';
 
 @Component({
@@ -20,7 +21,8 @@ export class CheckSampleComponent
 		AfterContentChecked,
 		AfterContentInit,
 		AfterViewChecked,
-		AfterViewInit
+		AfterViewInit,
+		OnDestroy
 {
 
 	quantidade: number = 0
@@ -57,6 +59,9 @@ export class CheckSampleComponent
 		console.log('ngAfterViewChecked');
 	}
 
+	ngOnDestroy(): void {
+		console.log('Goodbye my friend');
+	}
 
 	ngDoCheck(): void {
 		console.log('ngDoCheck');
