@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CompAtributosComponent implements OnInit {
 
-  estilo:string= "enable";
+  estilo: string= "enable";
+  corFundo: string= "blue";
+  corDaFonte: string= "yellow";
 
   constructor() { }
 
