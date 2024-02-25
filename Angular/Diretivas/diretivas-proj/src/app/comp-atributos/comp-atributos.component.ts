@@ -7,11 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CompAtributosComponent implements OnInit {
 
-  estilo: string= "enable";
+  estilo: string= "disable";
   corFundo: string= "blue";
   corDaFonte: string= "yellow";
+  item:string =""
+  lista:string[] = []
+
 
   constructor() { }
+
+  adicionarLista(){
+    this.lista.push(this.item)
+  }
 
   ngOnInit(): void {
   }
