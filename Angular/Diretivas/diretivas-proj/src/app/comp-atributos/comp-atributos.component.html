@@ -1,16 +1,24 @@
-<hr>
-<h1 [ngStyle]="{'background':corFundo, 'color':corDaFonte}">CURSO ANGULAR</h1>
+<hr />
+<h1 [ngStyle]="{ background: corFundo, color: corDaFonte }">CURSO ANGULAR</h1>
 
 <p [ngClass]="estilo">comp-atributos works!</p>
-<button (click)="trocar()"> CHANGE</button>
+<button (click)="trocar()">CHANGE</button>
 
 <h1>Lista de compras</h1>
 <p>adicione um item</p>
-<input type="text" [(ngModel)]="item">
-<button (click)=" adicionarLista()">ADICIONAR</button>
-<p> {{ item }} </p>
+<input type="text" [(ngModel)]="item" />
+<button (click)="adicionarLista()">ADICIONAR</button>
+<p>{{ item }}</p>
 
 <ul>
-  <li *ngFor="let elemento of lista"> {{ elemento}}</li>
+  <li *ngFor="let elemento of lista">{{ elemento }}</li>
 </ul>
-<hr>
+<hr /> <!--Cria linhas (divisões de espaço)-->
+
+<ng-template [ngIf]="isEnableBlock">
+  <a href="#">FINALIZAR COMPRA</a>
+</ng-template>
+<br><!--Quebra linha na página-->
+<ng-template ngIf="true">
+  <a href="#">ADICIONAR AO CARRINHO</a>
+</ng-template>
