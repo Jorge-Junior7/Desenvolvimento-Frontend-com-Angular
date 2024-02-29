@@ -4,6 +4,8 @@
 <p [ngClass]="estilo">comp-atributos works!</p>
 <button (click)="trocar()">CHANGE</button>
 
+<ng-content select="h2"></ng-content>
+
 <h1>Lista de compras</h1>
 <p>adicione um item</p>
 <input type="text" [(ngModel)]="item" />
@@ -18,6 +20,9 @@
 <ng-template [ngIf]="isEnableBlock">
   <a href="#">FINALIZAR COMPRA</a>
 </ng-template>
+
+<ng-content select="p"></ng-content>
+
 <br><!--Quebra linha na página-->
 <ng-template ngIf="true">
   <a href="#">ADICIONAR AO CARRINHO</a>
