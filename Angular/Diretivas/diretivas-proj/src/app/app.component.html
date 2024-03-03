@@ -1,13 +1,6 @@
-<app-comp-atributos>
-  <h2>ola</h2>
-  <p>eu vim de fora</p>
-</app-comp-atributos>
+<h1>olá mundo</h1>
 
+<app-input></app-input>
 
-<app-card *ngIf="isAliveCard; else anotherBlock"></app-card>
-
-<ng-template #anotherBlock>
-   <p>ola sou um bloco secreto</p>
-</ng-template>
-
+<app-list-view></app-list-view>
 <router-outlet></router-outlet>
